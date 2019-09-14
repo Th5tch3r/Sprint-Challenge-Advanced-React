@@ -10,7 +10,6 @@
     "semantic-ui-react": "^0.88.1"
   },
   "scripts": {
-
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --watchAll",

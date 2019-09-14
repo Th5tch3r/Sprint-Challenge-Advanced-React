@@ -1,9 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import {render} from "jest";
+import NavBar from './components/NavBar'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+test('App renders withouth crashing', async() => {
+  await render (<NavBar/>)
+})
+
+test('App renders withouth crashing', async() => {
+  await render (<App/>)
+})

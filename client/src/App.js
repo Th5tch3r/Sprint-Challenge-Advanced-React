@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PlayerCard from "./components/PlayerCard"
+import NavBar from "./components/NavBar";
 import './App.css';
 
 class App extends React.Component {
@@ -22,6 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <NavBar/>
         <div className="cards">
           <h1>{console.log(this.state.name)}</h1>
           {this.state.data.map(players => 
